@@ -42,7 +42,7 @@ app.post('/process_image', async (req, res) => {
             }
           ]
         }],
-        max_tokens: 300
+        max_tokens: 1000
       })
     });
 
