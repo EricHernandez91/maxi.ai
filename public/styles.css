@@ -10,28 +10,28 @@ body, html {
   background-image: url('eric 1.png');
   background-size: cover;
   background-position: center;
-  height: 50vh; /* Adjust the height as needed */
+  height: 50vh;
 }
 
 .header-content {
   text-align: center;
-  padding-top: 50px; /* Adjust padding as needed */
+  padding-top: 50px;
 }
 
 .header-content h1 {
   font-family: 'Playfair Display', serif;
   color: #e6d5b8;
   font-size: 3rem;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+  background-color: rgba(0, 0, 0, 0.7);
   display: inline-block;
   padding: 0.5em 1em;
-  margin-top: 15vh; /* Position the title down from the top of the viewport */
+  margin-top: 15vh;
 }
 
 .feature-section {
   text-align: center;
   padding: 50px 20px;
-  background-color: #2c2c2c; /* Dark background for contrast */
+  background-color: #2c2c2c;
 }
 
 .feature-image {
@@ -52,7 +52,7 @@ body, html {
 }
 
 /* Form and Progress Bar Styles */
-#file-upload {
+#imageInput {
   margin-top: 20px;
   padding: 10px;
   border-radius: 5px;
@@ -95,24 +95,15 @@ body, html {
 }
 
 #suggestions {
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  font-size: 16px;
-  background-color: #3d3d3d;
-  color: #e6d5b8;
-  resize: vertical;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .feature-image {
-    max-width: 80%;
-  }
-
-  .header-content h1 {
-    font-size: 2rem;
-  }
+  width: 100%; /* Ensure it takes the full width of its container */
+  height: 50vh; /* Make the text box take 50% of the viewport height */
+  padding: 20px; /* Increase padding for more internal space */
+  margin-top: 20px; /* Maintain the top margin as is */
+  border-radius: 5px; /* Maintain the rounded corners for aesthetics */
+  border: 2px solid #e6d5b8; /* Slightly thicker border for better visibility */
+  font-size: 18px; /* Increase font size for better readability */
+  background-color: #3d3d3d; /* Maintain the dark background */
+  color: #e6d5b8; /* Maintain the light text color for contrast */
+  resize: vertical; /* Keep vertical resizing */
+  overflow-y: auto; /* Ensures a scrollbar if the text is longer than the box */
 }
