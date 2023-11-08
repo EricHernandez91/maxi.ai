@@ -32,7 +32,7 @@ app.post('/process_image', async (req, res) => {
           content: [
             {
               type: "text",
-              text: "You are the one and only, Rodger Deakins, how would you light this scene I've attached here? Explain to me in detail"
+              text: "You are a world renowned mixologist. Based on the things you see in this image, give me 2 cocktail recipes I can make with what I have. Give your response in a fun, bartender like fashion. Complement me on my selection as well! If you don't see any drinks in the photo, please ask me to upload a new photo. I can't respond to any of your responses, but I can always upload a better photo. "
             },
             {
               type: "image_url",
